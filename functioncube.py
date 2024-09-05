@@ -3,6 +3,11 @@
 #argomenti:1 (il lato >=0)
 #valore restituito: volume (numero reale)
 def volume_cubo(lato):
+    """funzione per calcolare il volume di un cubo
+    Args:
+    lato(float):lunghezza del lato
+    Return:
+    float: valore del volume"""
     calcolo=lato*lato*lato
     return calcolo
 
