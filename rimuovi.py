@@ -16,7 +16,7 @@ while i<len(nomi):
     i=i+1    
 print(nomi)"""
 
-#METODO CORRETTO
+#metodo corretto 
 i=0
 while i<len(nomi):
     if len(nomi[i])<4:  #la lunghezza della lista si accorcia se il nome viene eliminato
@@ -33,3 +33,14 @@ for i in range(len(nomi)-1,-1,-1): #parto dall'ultimo elemento e arrivo fino all
 print(nomi)
 """questo metodo funziona all'inverso dato che pop fa scalare all'indieto le posizioni
 ma io sto percorrendo il ciclo all'indietro, quindi non mi perdo nessuna stringa"""
+
+#ATTENZIONE a quando iteri su una lista dentro il ciclo, NON modificare la lista che stai iterando
+#NON SI MODIFICA LA LISTA SU CUI SI ITERA
+#METODO CORRETTO DEFINITIVO 
+nomi2=[]
+for i in range(len(nomi)):
+    if len(nomi[i])>=4:
+        nomi2.append(nomi[i])
+print(nomi2)
+
+#questa sintassi ha il nome comprehension
