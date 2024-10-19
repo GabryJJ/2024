@@ -10,7 +10,7 @@ while carte<NUM_CARTE: #solo minore perchè altrimenti quando carte=45, nel rand
     carte+=pila
 
 print("configurazione iniziale:",pile," e la somma delle carte è: ",sum(pile))
-
+round=0
 while pile != [1,2,3,4,5,6,7,8,9]:
     nuovepile=[] #inizializzo una lista vuota
     for i in range(len(pile)): #itero sulle pile iniziali ottenute random
@@ -24,7 +24,8 @@ while pile != [1,2,3,4,5,6,7,8,9]:
     
 
     pile=nuovepile
+    round+=1
 print("Nuove pile:",nuovepile," con somma totale delle carte: ",sum(nuovepile))
-
+print("round=",round)
     
 
